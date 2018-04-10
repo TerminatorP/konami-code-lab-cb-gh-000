@@ -5,7 +5,7 @@ function init() {
   function keyDownHandler(e) {
     const key = parseInt(e.detail || e.which);
     if (key === code[call]) {
-      index++;
+      call++;
       if (call === code.length) {
         alert("Hurray!");
         call = 0;
@@ -17,4 +17,3 @@ function init() {
 }
 
 init();
-  
