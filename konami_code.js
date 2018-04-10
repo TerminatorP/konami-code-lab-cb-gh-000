@@ -10,8 +10,6 @@ function init() {
         alert("Hurray!");
         call = 0;
       }
-    } else {
-      call = 0;
     }
   }
 }
