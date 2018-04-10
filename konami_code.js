@@ -7,7 +7,7 @@ function init() {
     if (key === code[call]) {
       call++;
       if (call === code.length) {
-        alert("Hurray!");
+        window.alert("Hurray!");
         call = 0;
       }
     }
