@@ -10,9 +10,7 @@ function init() {
         alert("Hurray!");
         call = 0;
       }
-    } else {
-      index = 0;
-    }
+    } 
   }
 }
 
