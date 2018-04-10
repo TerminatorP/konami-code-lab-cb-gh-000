@@ -4,7 +4,7 @@ function init() {
   document.body.addEventListener('keydown', keyDownHandler);
   function keyDownHandler(e) {
     let keyValue = e.which;
-    console.log(keyValue);
+    console.log(typeof keyValue);
   }
 }
 
