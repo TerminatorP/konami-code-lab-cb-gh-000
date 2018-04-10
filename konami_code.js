@@ -5,6 +5,7 @@ function init() {
   function keyDownHandler(e) {
     let keyValue = e.which;
     if (keyValue === code[call]) {
+      console.log(keyValue, code[call]);
       call++;
       if (call === code.length) {
         alert("There are no easter eggs here!");
