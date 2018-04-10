@@ -5,7 +5,6 @@ function init() {
   function keyDownHandler(e) {
     let keyValue = e.which;
     if (keyValue === code[call]) {
-      console.log(keyValue, code[call]);
       call++;
       console.log(keyValue, code[call]);
       if (call === code.length) {
@@ -18,3 +17,4 @@ function init() {
 }
 
 init();
+  
