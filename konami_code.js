@@ -3,7 +3,7 @@ let call = 0;
 function init() {
   document.body.addEventListener('keydown', keyDownHandler);
   function keyDownHandler(e) {
-    let keyValue = e.which;
+    let keyValue = parseInt(e.detail || e.which);
     if (keyValue === code[call]) {
       call++;
       console.log(keyValue, code[call]);
