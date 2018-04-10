@@ -3,16 +3,16 @@ let call = 0;
 function init() {
   document.body.addEventListener('keydown', keyDownHandler);
   function keyDownHandler(e) {
-    let keyValue = parseInt(e.detail || e.which);
-    if (keyValue === code[call]) {
-      call++;
-      console.log(keyValue, code[call]);
+    const key = parseInt(e.detail || e.which);
+    if (key === code[call]) {
+      index++;
       if (call === code.length) {
-        alert("There are no easter eggs here!");
+        alert("Hurray!");
         call = 0;
       }
+    } else {
+      call = 0;
     }
-    call = 0;
   }
 }
 
