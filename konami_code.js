@@ -7,6 +7,7 @@ function init() {
     if (keyValue === code[call]) {
       console.log(keyValue, code[call]);
       call++;
+      console.log(keyValue, code[call]);
       if (call === code.length) {
         alert("There are no easter eggs here!");
         call = 0;
