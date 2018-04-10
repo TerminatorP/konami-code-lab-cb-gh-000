@@ -3,7 +3,7 @@ let call = 0;
 function init() {
   document.body.addEventListener('keydown', keyDownHandler);
   function keyDownHandler(e) {
-    let keyValue = parseInt(e.which || e.detail);
+    let keyValue = e.which;
     console.log(keyValue);
   }
 }
