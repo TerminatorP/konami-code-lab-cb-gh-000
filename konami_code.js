@@ -4,7 +4,14 @@ function init() {
   document.body.addEventListener('keydown', keyDownHandler);
   function keyDownHandler(e) {
     let keyValue = e.which;
-    console.log(typeof keyValue);
+    if (keyValue === code[call]) {
+      call++;
+      if (call === code.length) {
+        alert("There are no easter eggs here!");
+        call = 0;
+      }
+    }
+    call = 0;
   }
 }
 
